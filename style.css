@@ -1235,3 +1235,8 @@ section {
         right: -1rem;
     }
 }
+
+/* Placeholder image style */
+img[alt="Image not found"] {
+    content: url('images/placeholder.jpg');
+}
