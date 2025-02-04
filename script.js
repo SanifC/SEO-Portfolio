@@ -305,7 +305,6 @@ window.addEventListener('load', () => {
     initializeParticles();
     setupMetrics();
     addScrollProgressBar();
-    initializeChatWidget();
 });
 
 // Metrics Animation
@@ -407,27 +406,48 @@ function initializeParticles() {
     });
 }
 
-// Form handling
+// Form handling with EmailJS
 const contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    
     const button = contactForm.querySelector('button');
     const originalText = button.textContent;
+    const formData = {
+        name: contactForm.querySelector('input[name="name"]').value,
+        email: contactForm.querySelector('input[name="email"]').value,
+        message: contactForm.querySelector('textarea[name="message"]').value
+    };
     
+    // Disable form and show loading state
     button.disabled = true;
     button.innerHTML = '<span>Sending...</span>';
     
-    setTimeout(() => {
-        button.textContent = 'Message Sent!';
-        button.style.backgroundColor = '#4CAF50';
-        contactForm.reset();
-        
-        setTimeout(() => {
-            button.disabled = false;
-            button.textContent = originalText;
-            button.style.backgroundColor = '';
-        }, 3000);
-    }, 1000);
+    emailjs.send('default_service', 'template_contacct', formData)
+        .then(() => {
+            // Success state
+            button.textContent = 'Message Sent!';
+            button.style.backgroundColor = '#4CAF50';
+            contactForm.reset();
+            
+            setTimeout(() => {
+                button.disabled = false;
+                button.textContent = originalText;
+                button.style.backgroundColor = '';
+            }, 3000);
+        })
+        .catch((error) => {
+            // Error state
+            console.error('EmailJS Error:', error);
+            button.textContent = 'Failed to Send';
+            button.style.backgroundColor = '#dc3545';
+            
+            setTimeout(() => {
+                button.disabled = false;
+                button.textContent = originalText;
+                button.style.backgroundColor = '';
+            }, 3000);
+        });
 });
 
 // Navbar background on scroll
@@ -445,52 +465,6 @@ window.addEventListener('resize', () => {
 });
 updateNavBackground();
 
-// Carousel functionality
-const carousel = document.querySelector('.carousel');
-const items = document.querySelectorAll('.carousel-item');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-
-let currentIndex = 0;
-
-function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % items.length;
-    updateCarousel();
-}
-
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    updateCarousel();
-}
-
-// Event listeners
-nextBtn.addEventListener('click', nextSlide);
-prevBtn.addEventListener('click', prevSlide);
-
-// Auto-advance carousel every 5 seconds
-setInterval(nextSlide, 5000);
-
-// Touch support for mobile devices
-let touchStartX = 0;
-let touchEndX = 0;
-
-carousel.addEventListener('touchstart', e => {
-    touchStartX = e.changedTouches[0].screenX;
-});
-
-carousel.addEventListener('touchend', e => {
-    touchEndX = e.changedTouches[0].screenX;
-    if (touchStartX - touchEndX > 50) {
-        nextSlide();
-    } else if (touchEndX - touchStartX > 50) {
-        prevSlide();
-    }
-});
-
 // Add scroll progress bar
 function addScrollProgressBar() {
     const progressBar = document.createElement('div');
@@ -500,63 +474,5 @@ function addScrollProgressBar() {
     window.addEventListener('scroll', () => {
         const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
         progressBar.style.width = `${scrollPercent}%`;
-    });
-}
-
-// Add corresponding CSS
-const styleSheet = `
-.scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(to right, var(--accent), var(--accent-dark));
-    z-index: 1001;
-    transition: width 0.2s ease-out;
-}`;
-
-// Chat Widget Functionality
-function initializeChatWidget() {
-    const chatToggle = document.querySelector('.chat-toggle');
-    const chatBox = document.querySelector('.chat-box');
-    const chatMinimize = document.querySelector('.chat-minimize');
-    const chatInput = document.querySelector('.chat-input input');
-    const chatSend = document.querySelector('.chat-input button');
-    const chatMessages = document.querySelector('.chat-messages');
-    const chatBadge = document.querySelector('.chat-badge');
-
-    function toggleChat() {
-        chatBox.classList.toggle('active');
-        chatBadge.style.display = 'none';
-    }
-
-    function addMessage(message, isUser = false) {
-        const messageDiv = document.createElement('div');
-        messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
-        messageDiv.innerHTML = `<p>${message}</p>`;
-        chatMessages.appendChild(messageDiv);
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    chatToggle.addEventListener('click', toggleChat);
-    chatMinimize.addEventListener('click', toggleChat);
-
-    chatSend.addEventListener('click', () => {
-        const message = chatInput.value.trim();
-        if (message) {
-            addMessage(message, true);
-            chatInput.value = '';
-            // Simulate bot response
-            setTimeout(() => {
-                addMessage("Thanks for your message! I'll get back to you soon.");
-            }, 1000);
-        }
-    });
-
-    chatInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            chatSend.click();
-        }
     });
 }

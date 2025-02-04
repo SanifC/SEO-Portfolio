@@ -1041,198 +1041,42 @@ section {
     transform: translateY(-3px);
 }
 
-/* Chat Widget Styles */
-.chat-widget {
+/* WhatsApp Float Button */
+.whatsapp-float {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     z-index: 1000;
-    font-family: 'Arial', sans-serif;
 }
 
-.chat-toggle {
+.whatsapp-float a {
     width: 60px;
     height: 60px;
+    background: #25D366;
     border-radius: 50%;
-    background: var(--accent);
-    border: none;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    transition: all 0.3s ease;
+    text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
 }
 
-.chat-toggle:hover {
-    background: var(--accent-dark);
-    transform: translateY(-2px);
+.whatsapp-float a:hover {
+    transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    background: #22c15e;
 }
 
-.bot-icon {
-    width: 30px;
-    height: 30px;
+.whatsapp-float i {
+    font-size: 32px;
     color: white;
 }
 
-.chat-badge {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: #4CAF50;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-}
-
-.chat-box {
-    position: absolute;
-    bottom: 70px;
-    right: 0;
-    width: 300px;
-    background: var(--bg-secondary);
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    display: none;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.chat-box.active {
-    display: flex;
-    flex-direction: column;
-    animation: slideUp 0.3s ease-out;
-}
-
-.chat-header {
-    padding: 1rem;
-    background: var(--bg-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.chat-header h3 {
-    color: var(--text-primary);
-    margin: 0;
-    font-size: 1.1rem;
-}
-
-.chat-minimize {
-    background: none;
-    border: none;
-    color: var(--text-primary);
-    cursor: pointer;
-    padding: 5px;
-}
-
-.chat-messages {
-    padding: 1rem;
-    height: 300px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.message {
-    max-width: 80%;
-    padding: 0.8rem 1rem;
-    border-radius: 15px;
-    color: var(--text-primary);
-}
-
-.message.bot {
-    background: var(--bg-primary);
-    align-self: flex-start;
-    border-bottom-left-radius: 5px;
-}
-
-.message.user {
-    background: var(--accent);
-    align-self: flex-end;
-    border-bottom-right-radius: 5px;
-}
-
-.chat-input {
-    padding: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.chat-input input {
-    flex: 1;
-    padding: 0.8rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-}
-
-.chat-input button {
-    background: var(--accent);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.chat-input button:hover {
-    background: var(--accent-dark);
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Scrollbar Styling for Chat Messages */
-.chat-messages::-webkit-scrollbar {
-    width: 6px;
-}
-
-.chat-messages::-webkit-scrollbar-track {
-    background: var(--bg-primary);
-}
-
-.chat-messages::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 3px;
-}
-
-/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .chat-widget {
+    .whatsapp-float {
         bottom: 1rem;
         right: 1rem;
-    }
-
-    .chat-box {
-        width: calc(100vw - 2rem);
-        right: -1rem;
     }
 }
 

@@ -232,39 +232,23 @@
         </div>
     </div>
 
-    <!-- Update the chat widget HTML -->
-    <div class="chat-widget">
-        <button class="chat-toggle">
-            <svg class="bot-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16 12C16 12.41 15.66 12.75 15.25 12.75H8.75C8.34 12.75 8 12.41 8 12V11.25H16V12ZM16 10.25H8V9.5C8 9.09 8.34 8.75 8.75 8.75H15.25C15.66 8.75 16 9.09 16 9.5V10.25Z" fill="currentColor"/>
-                <circle cx="9.5" cy="15" r="1" fill="currentColor"/>
-                <circle cx="14.5" cy="15" r="1" fill="currentColor"/>
-            </svg>
-            <span class="chat-badge">1</span>
-        </button>
-        <div class="chat-box">
-            <div class="chat-header">
-                <h3>Let's Chat</h3>
-                <button class="chat-minimize">
-                    <i class="fas fa-minus"></i>
-                </button>
-            </div>
-            <div class="chat-messages">
-                <div class="message bot">
-                    <p>Hi! How can we help you today?</p>
-                </div>
-            </div>
-            <div class="chat-input">
-                <input type="text" placeholder="Type your message...">
-                <button><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </div>
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/923155468130" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
     </div>
 
     <button id="backToTop" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("VawblZRMuQNQmoVE0");
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
