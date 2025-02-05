@@ -355,17 +355,23 @@ function initializeParticles() {
     particlesJS('particles-js', {
         particles: {
             number: {
-                value: window.innerWidth < 768 ? 40 : 80,
+                value: window.innerWidth < 768 ? 30 : 50,
                 density: {
                     enable: true,
-                    value_area: 800
+                    value_area: 1000
                 }
             },
             color: { value: "#E63946" },
             shape: { type: "circle" },
             opacity: {
-                value: 0.5,
-                random: true
+                value: 0.3,
+                random: true,
+                anim: {
+                    enable: true,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false
+                }
             },
             size: {
                 value: window.innerWidth < 768 ? 2 : 3,
@@ -373,18 +379,18 @@ function initializeParticles() {
             },
             line_linked: {
                 enable: true,
-                distance: window.innerWidth < 768 ? 100 : 150,
+                distance: window.innerWidth < 768 ? 150 : 200,
                 color: "#E63946",
-                opacity: 0.2,
+                opacity: 0.15,
                 width: 1
             },
             move: {
                 enable: true,
-                speed: window.innerWidth < 768 ? 1.5 : 2,
+                speed: window.innerWidth < 768 ? 1 : 1.5,
                 direction: "none",
-                random: false,
+                random: true,
                 straight: false,
-                out_mode: "out",
+                out_mode: "bounce",
                 bounce: false
             }
         },
