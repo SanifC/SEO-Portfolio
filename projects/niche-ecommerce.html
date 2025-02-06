@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Niche-Specific E-commerce SEO Case Study - Dominating Specialized Market Segments">
+    <title>Niche E-commerce SEO Case Study</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .case-study {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 100px 20px 40px;
+            color: var(--text-primary);
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .case-study-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--text-primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .case-study-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .case-study-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .case-study-images img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: var(--shadow);
+        }
+
+        .case-study-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .case-study-content {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-content h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .case-study-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-study-content ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+            opacity: 0.9;
+        }
+
+        .case-study-content ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .metric-card {
+            background: var(--bg-primary);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card h3 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .metric-card p {
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <a href="../index.html#portfolio" class="back-link">← Back to Portfolio</a>
+    </nav>
+
+    <div class="case-study">
+        <div class="case-study-header">
+            <h1>Niche E-commerce Success</h1>
+            <p>Specialized Market SEO Case Study</p>
+        </div>
+
+        <div class="case-study-images">
+            <img src="../images/project_4/img1.JPG" alt="Niche E-commerce Homepage" onclick="openModal(this)">
+            <img src="../images/project_4/img2.JPG" alt="Product Showcase" onclick="openModal(this)">
+            <img src="../images/project_4/img3.JPG" alt="Category Layout" onclick="openModal(this)">
+        </div>
+
+        <div class="case-study-content">
+            <h2>Project Overview</h2>
+            <p>A specialized e-commerce store focusing on a specific niche market needed to establish dominance in their sector. The challenge was to capture highly targeted traffic and convert specialized audience segments while competing with larger marketplaces.</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>180%</h3>
+                    <p>Increase in Niche Traffic</p>
+                </div>
+                <div class="metric-card">
+                    <h3>95%</h3>
+                    <p>Growth in Market Share</p>
+                </div>
+                <div class="metric-card">
+                    <h3>55%</h3>
+                    <p>Higher ROI</p>
+                </div>
+            </div>
+
+            <h2>SEO Strategy & Implementation</h2>
+            <ul>
+                <li>Developed long-tail keyword strategy specific to the niche market</li>
+                <li>Created in-depth product guides and expert content</li>
+                <li>Built topical authority through specialized content clusters</li>
+                <li>Implemented expert review schema for product authority</li>
+                <li>Developed relationships with niche influencers and bloggers</li>
+            </ul>
+
+            <h2>Technical Optimizations</h2>
+            <ul>
+                <li>Implemented advanced product filtering for niche categories</li>
+                <li>Created specialized product comparison tools</li>
+                <li>Optimized site speed for complex product configurations</li>
+                <li>Enhanced mobile experience for specialty product browsing</li>
+                <li>Implemented structured data for specialty products</li>
+            </ul>
+
+            <h2>Content & Authority Building</h2>
+            <ul>
+                <li>Developed expert buying guides for specialty products</li>
+                <li>Created detailed product comparison content</li>
+                <li>Published industry expert interviews and insights</li>
+                <li>Implemented user-generated content strategy</li>
+                <li>Created educational content for niche product usage</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>After 10 months of implementing our specialized SEO strategy:</p>
+            <ul>
+                <li>180% increase in targeted organic traffic</li>
+                <li>95% growth in niche market share</li>
+                <li>55% improvement in ROI from organic traffic</li>
+                <li>Achieved #1 rankings for key niche terms</li>
+                <li>Established as the go-to authority in the niche</li>
+                <li>300% increase in organic newsletter signups</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <img src="" alt="Project Image">
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.project-modal');
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        function openModal(img) {
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>

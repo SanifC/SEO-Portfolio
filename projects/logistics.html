@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UK Based Logistics Website SEO Case Study - Improved Rankings and Organic Traffic">
+    <title>Logistics Website SEO Case Study</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .case-study {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 100px 20px 40px;
+            color: var(--text-primary);
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+        .case-study-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--text-primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .case-study-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+        .case-study-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .case-study-images img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .case-study-images img:hover {
+            transform: scale(1.05);
+        }
+        .case-study-content {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-content h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .case-study-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-study-content ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+            opacity: 0.9;
+        }
+
+        .case-study-content ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .metric-card {
+            background: var(--bg-primary);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card p {
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+        .metric-card h3 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <a href="../index.html#portfolio" class="back-link">← Back to Portfolio</a>
+    </nav>
+
+    <div class="case-study">
+        <div class="case-study-header">
+            <h1>UK Based Logistics Website</h1>
+            <p>SEO Case Study & Implementation</p>
+        </div>
+
+        <div class="case-study-images">
+            <img src="../images/project_1/img1.JPG" alt="Logistics Website Homepage" onclick="openModal(this)">
+            <img src="../images/project_1/img2.png" alt="Logistics Website Services" onclick="openModal(this)">
+            <img src="../images/project_1/img3.png" alt="Logistics Website Contact" onclick="openModal(this)">
+        </div>
+
+        <div class="case-study-content">
+            <h2>Project Overview</h2>
+            <p>A UK-based logistics company needed to improve their online visibility and generate more organic leads. The main challenge was competing in a highly saturated market while targeting specific geographic regions.</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>85%</h3>
+                    <p>Increase in Organic Traffic</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Top 3</h3>
+                    <p>Rankings for Key Terms</p>
+                </div>
+                <div class="metric-card">
+                    <h3>60%</h3>
+                    <p>More Lead Generation</p>
+                </div>
+            </div>
+
+            <h2>SEO Strategy & Implementation</h2>
+            <ul>
+                <li>Conducted comprehensive keyword research focusing on logistics services in specific UK regions</li>
+                <li>Optimized website structure and navigation for better user experience</li>
+                <li>Created location-specific service pages with targeted content</li>
+                <li>Implemented local SEO best practices including Google Business Profile optimization</li>
+                <li>Built high-quality backlinks from relevant industry directories and publications</li>
+            </ul>
+
+            <h2>Technical Improvements</h2>
+            <ul>
+                <li>Enhanced website loading speed through image optimization and caching</li>
+                <li>Implemented schema markup for services and locations</li>
+                <li>Fixed crawling issues and improved internal linking structure</li>
+                <li>Made the website mobile-responsive with AMP implementation</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>Within 6 months of implementing our SEO strategy, the website achieved:</p>
+            <ul>
+                <li>85% increase in organic search traffic</li>
+                <li>Top 3 rankings for primary regional logistics keywords</li>
+                <li>60% increase in qualified lead generation</li>
+                <li>Improved website authority score from 15 to 45</li>
+                <li>Enhanced local visibility across target regions</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <img src="" alt="Project Image">
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.project-modal');
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        function openModal(img) {
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>

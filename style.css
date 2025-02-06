@@ -48,6 +48,12 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--accent);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo::after {
+    display: none;
 }
 
 .nav-links {
@@ -463,6 +469,30 @@ section {
     color: var(--text-primary);
     font-size: 1.1rem;
     opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.case-study-btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--accent);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.portfolio-item:hover .case-study-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.case-study-btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px) !important;
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -601,16 +631,28 @@ footer {
         left: -100%;
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: var(--bg-primary);
+        background: rgba(15, 21, 38, 0.98);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: 0.3s;
+        transition: all 0.3s ease-in-out;
         gap: 2rem;
+        backdrop-filter: blur(10px);
     }
 
     .nav-links.active {
         left: 0;
+    }
+
+    .nav-links li {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-links.active li {
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .hero-content h1 {
@@ -654,6 +696,19 @@ footer {
 
     .carousel-item img {
         height: 300px;
+    }
+
+    /* Hamburger animation */
+    .nav-toggle.active span:first-child {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:last-child {
+        transform: rotate(-45deg) translate(6px, -6px);
     }
 }
 
@@ -725,6 +780,24 @@ footer {
 
     .nav-links a:active {
         color: var(--accent);
+    }
+
+    /* For touch devices */
+    .portfolio-item .portfolio-overlay {
+        bottom: 0;
+        background: linear-gradient(transparent 0%, rgba(15, 21, 38, 0.8) 30%, rgba(15, 21, 38, 0.95) 100%);
+        transform: translateY(70%);  /* Show just the title by default */
+        transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:active .portfolio-overlay,
+    .portfolio-item.touched .portfolio-overlay {
+        transform: translateY(0);    /* Show full overlay on touch */
+    }
+
+    .case-study-btn {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1198,4 +1271,259 @@ section {
 /* Placeholder image style */
 img[alt="Image not found"] {
     content: url('images/placeholder.jpg');
+}
+
+/* Add/Update these responsive styles */
+
+/* Extra large screens (4K and above) */
+@media screen and (min-width: 2560px) {
+    .container, .case-study {
+        max-width: 1800px;
+    }
+
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .section-title {
+        font-size: 3.5rem;
+    }
+
+    .skill-card {
+        padding: 3rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large laptops and desktops */
+@media screen and (max-width: 1440px) {
+    .container, .case-study {
+        max-width: 1200px;
+        padding: 0 2rem;
+    }
+}
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 95%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--bg-primary);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        gap: 2rem;
+        backdrop-filter: blur(10px);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-links.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .metric-container {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-images {
+        grid-template-columns: 1fr;
+    }
+
+    /* Hamburger animation */
+    .nav-toggle.active span:first-child {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:last-child {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+/* Large phones */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 85%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .metric-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.8rem;
+    }
+
+    .social-links a {
+        margin: 0 0.5rem;
+    }
+}
+
+/* Landscape mode */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 500px;
+    }
+
+    .nav-links.active {
+        padding: 1rem;
+        overflow-y: auto;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .portfolio-item:hover .portfolio-overlay {
+        bottom: 0;
+    }
+
+    .skill-card:hover {
+        transform: none;
+    }
+
+    .project-nav {
+        opacity: 0.8;
+        display: flex;
+    }
+}
+
+/* High contrast and reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    :root {
+        --accent: #FF0000;
+        --text-primary: #FFFFFF;
+        --text-secondary: #CCCCCC;
+    }
+}
+
+/* Print styles */
+@media print {
+    nav, 
+    .back-to-top,
+    .whatsapp-float,
+    .project-nav,
+    .modal-close {
+        display: none !important;
+    }
+
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+    }
+
+    .case-study {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* Add these styles for the hamburger menu */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--text-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
 }

@@ -4,21 +4,34 @@ const navLinks = document.querySelector('.nav-links');
 const body = document.body;
 
 function toggleMenu() {
-    navLinks.classList.toggle('active');
     navToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
     body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    
-    const spans = navToggle.querySelectorAll('span');
-    if (navToggle.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
-    } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    }
 }
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') && 
+        !navLinks.contains(e.target) && 
+        !navToggle.contains(e.target)) {
+        toggleMenu();
+    }
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+});
+
+// Add click event to hamburger
+navToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMenu();
+});
 
 // Project Gallery Functionality
 class ProjectGallery {
@@ -104,9 +117,21 @@ class ProjectGallery {
             slideInterval = setInterval(nextSlide, 3000);
         });
 
-        // Click to open modal
-        project.addEventListener('click', () => {
-            this.openModal(projectId, currentIndex);
+        // Handle image clicks for modal and project clicks for navigation
+        carousel.addEventListener('click', (e) => {
+            if (e.target.tagName === 'IMG') {
+                e.stopPropagation();
+                this.openModal(projectId, currentIndex);
+            }
+        });
+
+        // Always allow navigation buttons to work
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
         });
 
         // Touch support
@@ -305,6 +330,7 @@ window.addEventListener('load', () => {
     initializeParticles();
     setupMetrics();
     addScrollProgressBar();
+    initializeTouchPortfolio();
 });
 
 // Metrics Animation
@@ -480,5 +506,33 @@ function addScrollProgressBar() {
     window.addEventListener('scroll', () => {
         const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
         progressBar.style.width = `${scrollPercent}%`;
+    });
+}
+
+// Add this to your existing JavaScript
+function initializeTouchPortfolio() {
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    portfolioItems.forEach(item => {
+        item.addEventListener('touchstart', function() {
+            // Remove 'touched' class from all other items
+            portfolioItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('touched');
+                }
+            });
+            
+            // Toggle 'touched' class on current item
+            this.classList.toggle('touched');
+        });
+    });
+
+    // Close overlay when touching outside
+    document.addEventListener('touchstart', (e) => {
+        if (!e.target.closest('.portfolio-item')) {
+            portfolioItems.forEach(item => {
+                item.classList.remove('touched');
+            });
+        }
     });
 }

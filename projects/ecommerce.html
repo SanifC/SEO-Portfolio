@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UK Based E-commerce Website SEO Case Study - Increased Online Sales and Market Presence">
+    <title>E-commerce Website SEO Case Study</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .case-study {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 100px 20px 40px;
+            color: var(--text-primary);
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .case-study-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--text-primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .case-study-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .case-study-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .case-study-images img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: var(--shadow);
+        }
+
+        .case-study-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .case-study-content {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-content h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .case-study-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-study-content ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+            opacity: 0.9;
+        }
+
+        .case-study-content ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .metric-card {
+            background: var(--bg-primary);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card h3 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .metric-card p {
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <a href="../index.html#portfolio" class="back-link">← Back to Portfolio</a>
+    </nav>
+
+    <div class="case-study">
+        <div class="case-study-header">
+            <h1>E-commerce Website Optimization</h1>
+            <p>UK-Based Online Store SEO Case Study</p>
+        </div>
+
+        <div class="case-study-images">
+            <img src="../images/project_3/img1.JPG" alt="E-commerce Homepage" onclick="openModal(this)">
+            <img src="../images/project_3/img2.JPG" alt="Product Category Page" onclick="openModal(this)">
+            <img src="../images/project_3/img3.JPG" alt="Product Detail Page" onclick="openModal(this)">
+        </div>
+
+        <div class="case-study-content">
+            <h2>Project Overview</h2>
+            <p>A UK-based e-commerce store needed to improve their online visibility and increase sales in a highly competitive market. The main challenge was optimizing thousands of product pages while maintaining site performance and user experience.</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>200%</h3>
+                    <p>Increase in Organic Sales</p>
+                </div>
+                <div class="metric-card">
+                    <h3>165%</h3>
+                    <p>More Organic Traffic</p>
+                </div>
+                <div class="metric-card">
+                    <h3>45%</h3>
+                    <p>Higher Conversion Rate</p>
+                </div>
+            </div>
+
+            <h2>SEO Strategy & Implementation</h2>
+            <ul>
+                <li>Implemented automated product schema markup for enhanced SERP visibility</li>
+                <li>Created optimized category and collection pages based on user search patterns</li>
+                <li>Developed a content strategy focusing on commercial and informational intent</li>
+                <li>Implemented faceted navigation with SEO-friendly URL structure</li>
+                <li>Created a blog focusing on product-related keywords and buying guides</li>
+            </ul>
+
+            <h2>Technical Improvements</h2>
+            <ul>
+                <li>Optimized site architecture for efficient crawling of product pages</li>
+                <li>Implemented dynamic rendering for JavaScript-heavy pages</li>
+                <li>Enhanced site speed through image optimization and lazy loading</li>
+                <li>Created XML sitemaps with intelligent prioritization</li>
+                <li>Implemented advanced e-commerce tracking and analytics</li>
+            </ul>
+
+            <h2>E-commerce Specific Optimizations</h2>
+            <ul>
+                <li>Optimized product titles and descriptions for search intent</li>
+                <li>Implemented review schema markup for better CTR</li>
+                <li>Created unique meta descriptions for category pages</li>
+                <li>Optimized internal linking between related products</li>
+                <li>Implemented breadcrumb navigation with schema markup</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>After 12 months of implementing our e-commerce SEO strategy:</p>
+            <ul>
+                <li>200% increase in sales from organic search traffic</li>
+                <li>165% increase in organic search visibility</li>
+                <li>45% improvement in conversion rate</li>
+                <li>Achieved featured snippets for key product categories</li>
+                <li>Reduced bounce rate by 35%</li>
+                <li>Improved average order value by 25%</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <img src="" alt="Project Image">
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.project-modal');
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        function openModal(img) {
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>

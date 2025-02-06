@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online Tuition Services Website SEO Case Study - Enhanced Educational Platform Visibility">
+    <title>Education Website SEO Case Study</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .case-study {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 100px 20px 40px;
+            color: var(--text-primary);
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .case-study-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--text-primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .case-study-header p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        .case-study-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .case-study-images img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: var(--shadow);
+        }
+
+        .case-study-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .case-study-content {
+            background: var(--bg-secondary);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .case-study-content h2 {
+            font-size: 2rem;
+            margin: 2rem 0 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .case-study-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-primary);
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .case-study-content ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+            opacity: 0.9;
+        }
+
+        .case-study-content ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .metric-card {
+            background: var(--bg-primary);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .metric-card h3 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .metric-card p {
+            margin-bottom: 0;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 20px 0;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <a href="../index.html#portfolio" class="back-link">← Back to Portfolio</a>
+    </nav>
+
+    <div class="case-study">
+        <div class="case-study-header">
+            <h1>Online Tuition Services</h1>
+            <p>Educational Platform SEO Case Study</p>
+        </div>
+
+        <div class="case-study-images">
+            <img src="../images/project_2/img1.JPG" alt="Education Website Homepage" onclick="openModal(this)">
+            <img src="../images/project_2/img2.png" alt="Online Courses Page" onclick="openModal(this)">
+            <img src="../images/project_2/img3.JPG" alt="Student Dashboard" onclick="openModal(this)">
+        </div>
+
+        <div class="case-study-content">
+            <h2>Project Overview</h2>
+            <p>An online education platform offering tuition services needed to increase their visibility in the competitive e-learning market. The main challenge was attracting both students and qualified tutors while competing with established educational platforms.</p>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3>150%</h3>
+                    <p>Increase in Student Signups</p>
+                </div>
+                <div class="metric-card">
+                    <h3>90%</h3>
+                    <p>Higher Search Visibility</p>
+                </div>
+                <div class="metric-card">
+                    <h3>75%</h3>
+                    <p>More Tutor Applications</p>
+                </div>
+            </div>
+
+            <h2>SEO Strategy & Implementation</h2>
+            <ul>
+                <li>Performed in-depth keyword research targeting both student and tutor audiences</li>
+                <li>Created comprehensive content clusters around different subjects and learning levels</li>
+                <li>Developed an educational blog with expert content from qualified tutors</li>
+                <li>Implemented structured data for courses and educational content</li>
+                <li>Optimized for educational search intent and long-tail keywords</li>
+            </ul>
+
+            <h2>Technical Improvements</h2>
+            <ul>
+                <li>Improved website architecture to better organize educational content</li>
+                <li>Enhanced mobile responsiveness for better user experience</li>
+                <li>Implemented advanced schema markup for educational organizations</li>
+                <li>Optimized page load times for video content and interactive elements</li>
+                <li>Created dynamic XML sitemaps for different content categories</li>
+            </ul>
+
+            <h2>Content Strategy</h2>
+            <ul>
+                <li>Developed subject-specific landing pages with targeted keywords</li>
+                <li>Created educational resources and study guides for organic traffic</li>
+                <li>Implemented a Q&A section addressing common student queries</li>
+                <li>Published tutor success stories and student testimonials</li>
+                <li>Regular blog posts covering educational topics and exam preparation</li>
+            </ul>
+
+            <h2>Results</h2>
+            <p>After 8 months of implementing our comprehensive SEO strategy:</p>
+            <ul>
+                <li>150% increase in student registrations through organic search</li>
+                <li>90% improvement in search engine visibility for target keywords</li>
+                <li>75% increase in qualified tutor applications</li>
+                <li>Achieved featured snippets for key educational terms</li>
+                <li>Doubled organic traffic to the blog section</li>
+                <li>Improved average session duration by 45%</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="project-modal">
+        <button class="modal-close">&times;</button>
+        <div class="modal-content">
+            <img src="" alt="Project Image">
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector('.project-modal');
+        const modalImg = modal.querySelector('img');
+        const closeBtn = modal.querySelector('.modal-close');
+
+        function openModal(img) {
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>
