@@ -1,0 +1,69 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Grid -->
+    <defs>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#2C3E50" stroke-width="0.5" opacity="0.2"/>
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+
+    <!-- Central Server Icon -->
+    <g transform="translate(280, 180)">
+        <rect x="-40" y="-50" width="80" height="100" rx="5" fill="#3498db" opacity="0.9"/>
+        <rect x="-30" y="-40" width="60" height="10" rx="2" fill="#fff" opacity="0.7"/>
+        <rect x="-30" y="-20" width="60" height="10" rx="2" fill="#fff" opacity="0.7"/>
+        <rect x="-30" y="0" width="60" height="10" rx="2" fill="#fff" opacity="0.7"/>
+    </g>
+
+    <!-- Connecting Lines -->
+    <g stroke="#E63946" stroke-width="2" fill="none">
+        <!-- Search Engine Connections -->
+        <path d="M280 130 Q280 80 180 80" opacity="0.8">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" fill="freeze"/>
+        </path>
+        <path d="M320 130 Q320 80 420 80" opacity="0.8">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" fill="freeze"/>
+        </path>
+        
+        <!-- Performance Connections -->
+        <path d="M240 230 Q180 230 120 280" opacity="0.8">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" fill="freeze"/>
+        </path>
+        <path d="M360 230 Q420 230 480 280" opacity="0.8">
+            <animate attributeName="stroke-dashoffset" from="100" to="0" dur="2s" fill="freeze"/>
+        </path>
+    </g>
+
+    <!-- Technical SEO Elements -->
+    <g>
+        <!-- Search Engines -->
+        <circle cx="180" cy="80" r="30" fill="#2C3E50"/>
+        <text x="180" y="85" text-anchor="middle" fill="#fff" font-size="12">Crawlers</text>
+        
+        <circle cx="420" cy="80" r="30" fill="#2C3E50"/>
+        <text x="420" y="85" text-anchor="middle" fill="#fff" font-size="12">Indexing</text>
+
+        <!-- Performance Metrics -->
+        <circle cx="120" cy="280" r="30" fill="#2C3E50"/>
+        <text x="120" y="285" text-anchor="middle" fill="#fff" font-size="12">Speed</text>
+        
+        <circle cx="480" cy="280" r="30" fill="#2C3E50"/>
+        <text x="480" y="285" text-anchor="middle" fill="#fff" font-size="12">Mobile</text>
+    </g>
+
+    <!-- Animated Particles -->
+    <g fill="#E63946">
+        <circle cx="0" cy="0" r="3">
+            <animateMotion path="M280 130 Q280 80 180 80" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3">
+            <animateMotion path="M320 130 Q320 80 420 80" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3">
+            <animateMotion path="M240 230 Q180 230 120 280" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="3">
+            <animateMotion path="M360 230 Q420 230 480 280" dur="3s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg> 

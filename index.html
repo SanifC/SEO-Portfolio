@@ -12,7 +12,56 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">
+            <svg class="logo-svg" width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Glow -->
+                <circle cx="30" cy="30" r="25" fill="url(#glowGradient)" opacity="0.2"/>
+                
+                <!-- Main Arrows Group -->
+                <g class="arrows-group">
+                    <!-- Largest Arrow -->
+                    <path class="arrow-large" 
+                          d="M15 40 L30 25 L45 40" 
+                          stroke="var(--accent)" 
+                          stroke-width="4" 
+                          fill="none" 
+                          stroke-linecap="round" 
+                          stroke-linejoin="round"/>
+                    
+                    <!-- Medium Arrow -->
+                    <path class="arrow-medium" 
+                          d="M20 32 L30 18 L40 32" 
+                          stroke="var(--accent)" 
+                          stroke-width="3.5" 
+                          fill="none" 
+                          stroke-linecap="round" 
+                          stroke-linejoin="round"/>
+                    
+                    <!-- Small Arrow -->
+                    <path class="arrow-small" 
+                          d="M25 25 L30 12 L35 25" 
+                          stroke="var(--text-primary)" 
+                          stroke-width="3" 
+                          fill="none" 
+                          stroke-linecap="round" 
+                          stroke-linejoin="round"/>
+                </g>
+
+                <!-- Accent Elements -->
+                <circle cx="30" cy="18" r="2" fill="var(--text-primary)"/>
+                <circle cx="30" cy="25" r="2" fill="var(--accent)"/>
+                <circle cx="30" cy="32" r="2" fill="var(--accent)"/>
+
+                <!-- Gradients -->
+                <defs>
+                    <linearGradient id="glowGradient" x1="30" y1="5" x2="30" y2="55">
+                        <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.5"/>
+                        <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span class="logo-text">SEO Excellence</span>
+        </div>
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
@@ -95,25 +144,45 @@
     <section id="skills" class="skills">
         <h2 class="section-title">Our Skills</h2>
         <div class="skills-container">
-            <div class="skill-card">
+            <a href="services/technical-seo.html" class="skill-card">
                 <i class="fas fa-search"></i>
                 <h3>Technical SEO</h3>
-                <p>Site Architecture, Speed Optimization</p>
+                <p>Site Architecture, Speed Optimization, Mobile Optimization</p>
+            </a>
+            <a href="services/on-page-seo.html" class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>On-Page SEO</h3>
+                <p>Content Optimization, Meta Tags, Internal Linking</p>
+            </a>
+            <div class="skill-card">
+                <i class="fas fa-link"></i>
+                <h3>Off-Page SEO</h3>
+                <p>Link Building, Brand Mentions, Authority Building</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-chart-line"></i>
-                <h3>Keyword Research</h3>
-                <p>Strategic Analysis & Planning</p>
+                <h3>Local SEO</h3>
+                <p>Google Business Profile, Local Citations, Area Targeting</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-pencil-alt"></i>
-                <h3>Content Strategy</h3>
-                <p>SEO-Optimized Content Creation</p>
+                <i class="fas fa-envelope"></i>
+                <h3>Email Marketing</h3>
+                <p>Campaign Strategy, Automation, List Management</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-link"></i>
-                <h3>Link Building</h3>
-                <p>High-Quality Backlink Acquisition</p>
+                <i class="fas fa-hashtag"></i>
+                <h3>Social Media</h3>
+                <p>Content Strategy, Community Management, Paid Campaigns</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>PPC Advertising</h3>
+                <p>Google Ads, Meta Ads, Campaign Optimization</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Content Marketing</h3>
+                <p>Strategy Development, Content Creation, Distribution</p>
             </div>
         </div>
     </section>

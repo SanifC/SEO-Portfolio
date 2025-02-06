@@ -1,0 +1,19 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="code-grid" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+            <!-- HTML-like symbols -->
+            <path d="M10 20 L15 25 L10 30" stroke="#E63946" stroke-width="1" fill="none" opacity="0.2"/>
+            <path d="M20 15 L25 20 L20 25" stroke="#E63946" stroke-width="1" fill="none" opacity="0.2"/>
+            
+            <!-- Dots representing connection points -->
+            <circle cx="5" cy="5" r="1" fill="#E63946" opacity="0.2"/>
+            <circle cx="45" cy="45" r="1" fill="#E63946" opacity="0.2"/>
+            
+            <!-- Binary-like elements -->
+            <text x="30" y="20" fill="#E63946" font-size="8" opacity="0.2">01</text>
+            <text x="15" y="40" fill="#E63946" font-size="8" opacity="0.2">10</text>
+        </pattern>
+    </defs>
+    
+    <rect width="200" height="200" fill="url(#code-grid)"/>
+</svg> 
