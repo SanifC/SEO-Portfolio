@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="150" height="150" fill="#1A1F35"/>
+    <text x="75" y="95" fill="#E63946" font-family="Arial" font-size="16" text-anchor="middle">Yoast SEO</text>
+    <!-- Traffic Light Design -->
+    <circle cx="75" cy="50" r="10" fill="#E63946"/>
+    <circle cx="75" cy="75" r="10" fill="#4A235A"/>
+    <rect x="65" cy="35" width="20" height="60" rx="10" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+    <circle cx="75" cy="75" r="40" stroke="#4A235A" stroke-width="2" fill="none"/>
+</svg>

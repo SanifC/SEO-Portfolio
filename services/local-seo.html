@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Professional Local SEO Services - Google Business Profile, Local Citations, Area Targeting">
+    <meta name="theme-color" content="#1A1F35">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Local SEO Services - SEO Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../services.css">
+    <link rel="preload" href="../style.css" as="style">
+    <link rel="preload" href="../services.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <style>
+        /* Text color consistency */
+        body {
+            color: var(--text-primary);
+        }
+        h1, h2, h3 {
+            color: var(--text-primary);
+        }
+        p {
+            color: var(--text-secondary);
+        }
+        .section-subtitle {
+            color: var(--text-secondary);
+        }
+        .overview-features li {
+            color: var(--text-secondary);
+        }
+        .checklist-column ul li {
+            color: var(--text-secondary);
+        }
+    
+        /* Tool grid formatting */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .tool-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+        .tool-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+        }
+    
+        /* Process Section Styling */
+.service-process {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+}
+
+.service-process h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.process-step:hover {
+    transform: translateX(10px);
+    border-color: #E63946;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.step-number {
+    background: #E63946;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .process-step {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+
+    .step-content h3 {
+        font-size: 1.1rem;
+    }
+}
+    
+        /* FAQ Styling */
+.service-faq {
+    padding: 4rem 0;
+    background: var(--bg-primary);
+}
+
+.service-faq h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: rgba(26, 31, 53, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-item:hover {
+    background: var(--bg-secondary);
+    transform: translateY(-5px);
+    border-color: #E63946;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .faq-item {
+        padding: 1.5rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.1rem;
+    }
+}
+    
+        /* CTA Section */
+        .service-cta {
+            padding: 4rem 0;
+            text-align: center;
+            background: var(--bg-secondary);
+        }
+    
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    
+        .cta-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+    
+        .cta-btn.primary {
+            background: #E63946;
+            color: #ffffff;
+        }
+    
+        .cta-btn.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #E63946;
+        }
+    
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+    
+        /* Quick Audit Section */
+        .quick-audit {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+            text-align: center;
+        }
+    
+        .audit-form {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .audit-form input {
+            flex: 1;
+            padding: 0.8rem 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            background: var(--bg-secondary);
+            color: #ffffff;
+            font-size: 1rem;
+        }
+    
+        .audit-form input:focus {
+            outline: none;
+            border-color: #E63946;
+        }
+    
+        .audit-btn {
+            padding: 0.8rem 2rem;
+            background: #E63946;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+    
+        .audit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+    
+        /* Checklist Section */
+        .checklist-section {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+    
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+    
+        .checklist-column {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    
+        .checklist-column h3 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+    
+        .checklist-column ul {
+            list-style: none;
+            padding: 0;
+        }
+    
+        .checklist-column ul li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+    
+        .checklist-column ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #E63946;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Stats -->
+    <div class="floating-stats">
+        <div class="stat-bubble">
+            <span>300+</span>
+            <p>Local Businesses</p>
+        </div>
+        <div class="stat-bubble">
+            <span>92%</span>
+            <p>Local Visibility</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section class="service-hero">
+        <div class="hero-background">
+            <div class="code-overlay"></div>
+        </div>
+        <div class="service-hero-content">
+            <span class="service-category">Local SEO</span>
+            <h1>Local SEO <span class="highlight">Domination</span></h1>
+            <p class="hero-subtitle">Own Your Local Market & Attract Nearby Customers</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number counter">85</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">Local Search Visibility</span>
+                    <div class="stat-bar" data-percentage="85"></div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number counter">92</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">GBP Optimization</span>
+                    <div class="stat-bar" data-percentage="92"></div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number counter">78</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">Local Ranking Improvement</span>
+                    <div class="stat-bar" data-percentage="78"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Why Local SEO Matters</h2>
+                    <p>Local SEO is crucial for businesses targeting customers in specific geographic areas. It helps you appear in local search results, Google Maps, and attract customers when they're ready to buy.</p>
+                    <ul class="overview-features">
+                        <li><i class="fas fa-check"></i> Increased Local Visibility</li>
+                        <li><i class="fas fa-check"></i> Higher Quality Leads</li>
+                        <li><i class="fas fa-check"></i> Better Conversion Rates</li>
+                        <li><i class="fas fa-check"></i> Enhanced Local Reputation</li>
+                    </ul>
+                </div>
+                <div class="overview-image">
+                    <img src="../images/services/local-seo-diagram.svg" alt="Local SEO Visualization" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/1A1F35/FFFFFF?text=Local+SEO+Diagram'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="service-features">
+        <div class="container">
+            <h2>Our Local SEO Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Google Business Profile</h3>
+                    <p>Optimize your GBP listing for maximum local visibility and engagement.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Local Citations</h3>
+                    <p>Build and maintain consistent business listings across the web.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Review Management</h3>
+                    <p>Monitor and respond to customer reviews to build trust and authority.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map"></i>
+                    <h3>Local Content</h3>
+                    <p>Create location-specific content that resonates with your local audience.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Area Targeting</h3>
+                    <p>Target specific neighborhoods and regions with precision marketing.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Local Analytics</h3>
+                    <p>Track and analyze local search performance and customer behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Our Process Section -->
+<section class="service-process">
+    <div class="container">
+        <h2>Our Local SEO Process</h2>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Local Audit & Strategy</h3>
+                    <p>Comprehensive analysis of your local presence including Google Business Profile, citations, and competitor landscape.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>GBP Optimization</h3>
+                    <p>Optimizing your Google Business Profile with accurate information, engaging posts, and strategic keyword placement.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Implementation</h3>
+                    <p>Building and managing citations, optimizing local content, and implementing local schema markup.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Monitoring & Refinement</h3>
+                    <p>Continuous monitoring of local rankings, review management, and strategy refinement based on performance data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Checklist Section -->
+    <section class="checklist-section">
+        <div class="container">
+            <h2>Local SEO Checklist</h2>
+            <p class="section-subtitle">Our comprehensive approach to dominating local search</p>
+            <div class="checklist-grid">
+                <div class="checklist-column">
+                    <h3>Google Business Profile</h3>
+                    <ul>
+                        <li>Profile Optimization</li>
+                        <li>Category Selection</li>
+                        <li>Photo Management</li>
+                        <li>Post Creation</li>
+                        <li>Q&A Management</li>
+                    </ul>
+                </div>
+                <div class="checklist-column">
+                    <h3>Citation Building</h3>
+                    <ul>
+                        <li>NAP Consistency</li>
+                        <li>Directory Submissions</li>
+                        <li>Data Aggregator Setup</li>
+                        <li>Citation Cleanup</li>
+                        <li>Industry Citations</li>
+                    </ul>
+                </div>
+                <div class="checklist-column">
+                    <h3>Local Presence</h3>
+                    <ul>
+                        <li>Review Generation</li>
+                        <li>Local Link Building</li>
+                        <li>Local Content Creation</li>
+                        <li>Schema Markup</li>
+                        <li>Mobile Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2>Professional Tools We Use</h2>
+            <p class="section-subtitle">Industry-leading tools for comprehensive local SEO management</p>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/tools/brightlocal.svg" alt="BrightLocal" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=BrightLocal'">
+                    <h3>BrightLocal</h3>
+                    <p>Local SEO and citation management</p>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/tools/moz-local.svg" alt="Moz Local" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Moz+Local'">
+                    <h3>Moz Local</h3>
+                    <p>Local presence management</p>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/tools/gmb.svg" alt="Google Business Profile" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=GBP'">
+                    <h3>GBP Dashboard</h3>
+                    <p>Business profile management</p>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/tools/whitespark.svg" alt="Whitespark" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Whitespark'">
+                    <h3>Whitespark</h3>
+                    <p>Citation building and tracking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FAQ Section -->
+<section class="service-faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What is Local SEO?</h3>
+                <p>Local SEO refers to website and business optimizations that help you appear in local search results. It's essential for businesses wanting to attract customers from their geographic area.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How long does Local SEO take?</h3>
+                <p>Initial local SEO improvements can be seen within 2-4 weeks, with significant results typically showing in 3-4 months. However, local SEO is an ongoing process of monitoring and improvement.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will Local SEO affect my business listings?</h3>
+                <p>Local SEO involves optimizing your business listings, but we ensure all changes are strategic and maintain brand consistency. Any modifications will be discussed and approved beforehand.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do you measure Local SEO success?</h3>
+                <p>We track various metrics including local pack rankings, Google Business Profile insights, citation accuracy, customer reviews, and local organic traffic growth.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="service-cta">
+    <div class="container">
+        <h2>Ready to Dominate Local Search?</h2>
+        <p>Get a free local presence audit</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="cta-btn primary">Get Started</a>
+            <a href="#" class="cta-btn secondary">View Case Studies</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Quick Audit Section -->
+    <section class="quick-audit">
+        <div class="container">
+            <h2>Quick Local Presence Check</h2>
+            <div class="audit-form">
+                <input type="text" placeholder="Enter your business name and location" aria-label="Business Name and Location">
+                <button class="cta-btn">Check Local Presence</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="../services.js"></script>
+</body>
+</html>

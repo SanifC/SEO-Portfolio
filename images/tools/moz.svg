@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="150" height="150" fill="#1A1F35"/>
+    <text x="75" y="85" fill="#E63946" font-family="Arial" font-size="24" text-anchor="middle">MOZ</text>
+    <circle cx="75" cy="75" r="35" stroke="#4A235A" stroke-width="2" fill="none"/>
+    <path d="M50,60 L100,60 M50,75 L100,75 M50,90 L100,90" stroke="#E63946" stroke-width="3" fill="none"/>
+</svg>

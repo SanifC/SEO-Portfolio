@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="150" height="150" fill="#1A1F35"/>
+    <text x="75" y="95" fill="#E63946" font-family="Arial" font-size="16" text-anchor="middle">Surfer SEO</text>
+    <!-- Wave Design -->
+    <path d="M30,60 Q75,30 120,60 T210,60" stroke="#E63946" stroke-width="3" fill="none"/>
+    <path d="M30,75 Q75,45 120,75 T210,75" stroke="#4A235A" stroke-width="3" fill="none"/>
+    <circle cx="75" cy="75" r="40" stroke="#4A235A" stroke-width="2" fill="none"/>
+</svg>
