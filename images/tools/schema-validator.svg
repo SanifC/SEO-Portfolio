@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="150" height="150" rx="10" fill="#1A1F35"/>
+    
+    <!-- Schema Validator Logo -->
+    <g transform="translate(25, 25)">
+        <!-- Code Structure -->
+        <rect x="10" y="10" width="80" height="80" rx="5" 
+              stroke="#4A90E2" stroke-width="2" fill="none"/>
+        
+        <!-- Schema Lines -->
+        <line x1="20" y1="30" x2="60" y2="30" stroke="#4A90E2" stroke-width="2"/>
+        <line x1="25" y1="45" x2="75" y2="45" stroke="#4A90E2" stroke-width="2"/>
+        <line x1="30" y1="60" x2="70" y2="60" stroke="#4A90E2" stroke-width="2"/>
+        
+        <!-- Validation Check -->
+        <circle cx="75" cy="75" r="20" fill="#27AE60"/>
+        <path d="M65 75 L72 82 L87 67" 
+              stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        
+        <!-- JSON Brackets -->
+        <text x="20" y="25" fill="#4A90E2" font-family="monospace" font-size="16">{</text>
+        <text x="20" y="75" fill="#4A90E2" font-family="monospace" font-size="16">}</text>
+    </g>
+    
+    <!-- Text -->
+    <text x="75" y="130" fill="white" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Schema Validator</text>
+</svg>

@@ -35,6 +35,7 @@
         .checklist-column ul li {
             color: var(--text-secondary);
         }
+
         /* Tool grid formatting */
         .tools-grid {
             display: grid;
@@ -57,6 +58,296 @@
             height: 80px;
             margin-bottom: 1rem;
             border-radius: 10px;
+        }
+
+        /* Process Section Styling */
+        .service-process {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+
+        .service-process h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .process-steps {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .process-step:hover {
+            transform: translateX(10px);
+            border-color: #E63946;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .step-number {
+            background: #E63946;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* FAQ Styling */
+        .service-faq {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+
+        .service-faq h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(26, 31, 53, 0.5);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item:hover {
+            background: var(--bg-secondary);
+            transform: translateY(-5px);
+            border-color: #E63946;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-item h3 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* CTA Section */
+        .service-cta {
+            padding: 4rem 0;
+            text-align: center;
+            background: var(--bg-secondary);
+        }
+
+        .service-cta h2 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .service-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .cta-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn.primary {
+            background: #E63946;
+            color: #ffffff;
+        }
+
+        .cta-btn.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #E63946;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        /* Quick Audit Section */
+        .quick-audit {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+            text-align: center;
+        }
+
+        .audit-form {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .audit-form input {
+            flex: 1;
+            padding: 0.8rem 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            background: var(--bg-secondary);
+            color: #ffffff;
+            font-size: 1rem;
+        }
+
+        .audit-form input:focus {
+            outline: none;
+            border-color: #E63946;
+        }
+
+        .audit-btn {
+            padding: 0.8rem 2rem;
+            background: #E63946;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .audit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        /* Checklist Section */
+        .checklist-section {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+
+        .checklist-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .checklist-column {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .checklist-column h3 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .checklist-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist-column ul li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .checklist-column ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #E63946;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .process-step {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .step-number {
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
+            }
+
+            .step-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .faq-item {
+                padding: 1.5rem;
+            }
+
+            .faq-item h3 {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0 1rem;
+            }
+
+            .audit-form {
+                flex-direction: column;
+                padding: 0 1rem;
+            }
         }
     </style>
 </head>
@@ -175,7 +466,46 @@
         </div>
     </section>
 
+<!-- Our Process Section -->
+<section class="service-process">
+    <div class="container">
+        <h2>Our On-Page SEO Process</h2>
+        
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Content Audit & Analysis</h3>
+                    <p>Comprehensive analysis of your website's content, structure, and on-page elements to identify optimization opportunities.</p>
+                </div>
+            </div>
 
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Keyword Strategy</h3>
+                    <p>Developing a targeted keyword strategy based on search intent, competition analysis, and business goals.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Content Optimization</h3>
+                    <p>Optimizing meta tags, headings, content structure, and internal linking for maximum search visibility.</p>
+                </div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Performance Tracking</h3>
+                    <p>Continuous monitoring of rankings, organic traffic, and user engagement metrics to refine our optimization strategy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     
     <!-- Checklist Section -->
     <section class="checklist-section">
@@ -250,6 +580,47 @@
             </div>
         </div>
     </section>
+<!-- FAQ Section -->
+<section class="service-faq">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>What is On-Page SEO?</h3>
+                <p>On-Page SEO involves optimizing individual web pages to rank higher in search engines. This includes optimizing content, HTML source code, and all elements within your website.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How long does On-Page SEO take?</h3>
+                <p>Initial on-page optimizations typically take 2-3 weeks to implement. However, you may start seeing improvements in rankings within 4-8 weeks, with continued enhancements over time.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will On-Page SEO affect my content?</h3>
+                <p>While we optimize your content for search engines, we maintain its value and readability for users. All changes are strategic and preserve your brand voice and message.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do you measure success?</h3>
+                <p>We track various metrics including organic rankings, click-through rates, time on page, bounce rates, and conversion rates to measure the effectiveness of our optimizations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="service-cta">
+    <div class="container">
+        <h2>Ready to Optimize Your Content?</h2>
+        <p>Get a free content audit and optimization plan</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="cta-btn primary">Get Started</a>
+            <a href="#" class="cta-btn secondary">View Case Studies</a>
+        </div>
+    </div>
+</section>
+
 
     <!-- Quick Audit Section -->
     <section class="quick-audit">

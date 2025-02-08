@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="150" height="150" rx="10" fill="#1A1F35"/>
+    
+    <!-- Google Ads Logo -->
+    <g transform="translate(25, 25) scale(0.7)">
+        <!-- Yellow Triangle -->
+        <path d="M70 20 L140 140 L0 140 Z" fill="#FBBC04"/>
+        
+        <!-- Blue Circle -->
+        <circle cx="70" cy="60" r="40" fill="#4285F4"/>
+        
+        <!-- Green Square -->
+        <rect x="85" y="85" width="40" height="40" fill="#34A853"/>
+        
+        <!-- Red Rectangle -->
+        <rect x="15" y="85" width="40" height="40" fill="#EA4335"/>
+    </g>
+    
+    <!-- Text -->
+    <text x="75" y="130" fill="white" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Google Ads</text>
+</svg>

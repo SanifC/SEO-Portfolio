@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Professional PPC Advertising Services - Targeted Campaigns, ROI-Focused, Data-Driven Results">
+    <meta name="theme-color" content="#1A1F35">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>PPC Advertising Services - Digital Marketing Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../services.css">
+    <link rel="preload" href="../style.css" as="style">
+    <link rel="preload" href="../services.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <style>
+        /* Text color consistency */
+        body {
+            color: var(--text-primary);
+        }
+        h1, h2, h3 {
+            color: var(--text-primary);
+        }
+        p {
+            color: var(--text-secondary);
+        }
+        .section-subtitle {
+            color: var(--text-secondary);
+        }
+        .overview-features li {
+            color: var(--text-secondary);
+        }
+        .checklist-column ul li {
+            color: var(--text-secondary);
+        }
+
+        /* Tool grid formatting */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .tool-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+        .tool-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+        }
+
+        /* Process Section Styling */
+        .service-process {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+
+        .service-process h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .process-steps {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .process-step:hover {
+            transform: translateX(10px);
+            border-color: #E63946;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .step-number {
+            background: #E63946;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-content h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* FAQ Styling */
+        .service-faq {
+            padding: 4rem 0;
+            background: var(--bg-primary);
+        }
+
+        .service-faq h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(26, 31, 53, 0.5);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item:hover {
+            background: var(--bg-secondary);
+            transform: translateY(-5px);
+            border-color: #E63946;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-item h3 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* CTA Section */
+        .service-cta {
+            padding: 4rem 0;
+            text-align: center;
+            background: var(--bg-secondary);
+        }
+
+        .service-cta h2 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .service-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .cta-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn.primary {
+            background: #E63946;
+            color: #ffffff;
+        }
+
+        .cta-btn.secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 1px solid #E63946;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .process-step {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .step-number {
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
+            }
+
+            .step-content h3 {
+                font-size: 1.1rem;
+            }
+
+            .faq-item {
+                padding: 1.5rem;
+            }
+
+            .faq-item h3 {
+                font-size: 1.1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Stats -->
+    <div class="floating-stats">
+        <div class="stat-bubble">
+            <span>300%</span>
+            <p>Average ROI</p>
+        </div>
+        <div class="stat-bubble">
+            <span>90%</span>
+            <p>Client Satisfaction</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section class="service-hero">
+        <div class="hero-background">
+            <div class="code-overlay"></div>
+        </div>
+        <div class="service-hero-content">
+            <span class="service-category">PPC Advertising</span>
+            <h1>PPC <span class="highlight">Excellence</span></h1>
+            <p class="hero-subtitle">Drive Targeted Traffic & Maximize ROI</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number counter">300</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">Average ROI</span>
+                    <div class="stat-bar" data-percentage="85"></div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number counter">90</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">Conversion Rate Increase</span>
+                    <div class="stat-bar" data-percentage="90"></div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number counter">85</span><span class="stat-symbol">%</span>
+                    <span class="stat-label">Cost Reduction</span>
+                    <div class="stat-bar" data-percentage="85"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Why PPC Advertising Matters</h2>
+                    <p>PPC advertising delivers immediate results with measurable ROI. It's the fastest way to get your brand in front of your target audience when they're actively searching for your products or services.</p>
+                    <ul class="overview-features">
+                        <li><i class="fas fa-check"></i> Instant Traffic Generation</li>
+                        <li><i class="fas fa-check"></i> Precise Audience Targeting</li>
+                        <li><i class="fas fa-check"></i> Measurable Results</li>
+                        <li><i class="fas fa-check"></i> Cost-Effective Marketing</li>
+                    </ul>
+                </div>
+                <div class="overview-image">
+                    <img src="../images/services/ppc-advertising-diagram.svg" alt="PPC Advertising Visualization" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/1A1F35/FFFFFF?text=PPC+Advertising+Diagram'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="service-features">
+        <div class="container">
+            <h2>Our PPC Advertising Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Campaign Strategy</h3>
+                    <p>Custom PPC strategies aligned with your business goals and target audience.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-search-dollar"></i>
+                    <h3>Keyword Research</h3>
+                    <p>In-depth keyword analysis to target high-intent search terms.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Performance Tracking</h3>
+                    <p>Real-time monitoring and optimization of campaign performance.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-edit"></i>
+                    <h3>Ad Creation</h3>
+                    <p>Compelling ad copy that drives clicks and conversions.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-funnel-dollar"></i>
+                    <h3>Budget Management</h3>
+                    <p>Strategic budget allocation to maximize ROI across campaigns.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-analytics"></i>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Detailed insights and regular performance reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="service-process">
+        <div class="container">
+            <h2>Our PPC Management Process</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Account Analysis</h3>
+                        <p>Comprehensive review of your existing PPC accounts or fresh strategy development for new campaigns.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Campaign Setup</h3>
+                        <p>Strategic campaign structure, keyword research, and compelling ad creation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Optimization</h3>
+                        <p>Continuous monitoring and refinement of campaigns for maximum performance.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Reporting & Analysis</h3>
+                        <p>Regular performance reports with actionable insights and recommendations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist Section -->
+    <section class="checklist-section">
+        <div class="container">
+            <h2>PPC Campaign Checklist</h2>
+            <p class="section-subtitle">Our comprehensive approach to PPC success</p>
+            <div class="checklist-grid">
+                <div class="checklist-column">
+                    <h3>Campaign Setup</h3>
+                    <ul>
+                        <li>Account Structure</li>
+                        <li>Keyword Research</li>
+                        <li>Ad Copy Creation</li>
+                        <li>Landing Page Review</li>
+                        <li>Budget Planning</li>
+                    </ul>
+                </div>
+                <div class="checklist-column">
+                    <h3>Optimization</h3>
+                    <ul>
+                        <li>Bid Management</li>
+                        <li>Quality Score Improvement</li>
+                        <li>A/B Testing</li>
+                        <li>Negative Keywords</li>
+                        <li>Ad Extensions</li>
+                    </ul>
+                </div>
+                <div class="checklist-column">
+                    <h3>Analysis</h3>
+                    <ul>
+                        <li>Conversion Tracking</li>
+                        <li>ROI Analysis</li>
+                        <li>Performance Metrics</li>
+                        <li>Competitor Analysis</li>
+                        <li>Budget Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2>Professional Tools We Use</h2>
+            <p class="section-subtitle">Industry-leading platforms for PPC campaign management</p>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <img src="../images/tools/google-ads.svg" alt="Google Ads" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Google+Ads'">
+                    <h3>Google Ads</h3>
+                    <p>Search & Display advertising</p>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/tools/semrush.svg" alt="SEMrush" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=SEMrush'">
+                    <h3>SEMrush</h3>
+                    <p>Keyword & competitor research</p>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/tools/analytics.svg" alt="Google Analytics" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Analytics'">
+                    <h3>Analytics</h3>
+                    <p>Performance tracking</p>
+                </div>
+                <div class="tool-card">
+                    <img src="../images/tools/optmyzr.svg" alt="Optmyzr" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Optmyzr'">
+                    <h3>Optmyzr</h3>
+                    <p>Campaign optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="service-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What is PPC advertising?</h3>
+                    <p>PPC (Pay-Per-Click) advertising is a digital marketing model where advertisers pay only when users click on their ads. It's an effective way to drive targeted traffic to your website and generate immediate results.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does it take to see results?</h3>
+                    <p>PPC campaigns can generate immediate traffic, but optimizing for best performance typically takes 2-3 months. We continuously monitor and adjust campaigns to improve ROI over time.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's a good budget to start with?</h3>
+                    <p>Starting budgets vary by industry and goals, but we recommend a minimum of $1000/month for effective testing and optimization. We'll help you determine the optimal budget based on your objectives.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you measure success?</h3>
+                    <p>We track key metrics including click-through rate (CTR), conversion rate, cost per conversion, and return on ad spend (ROAS). We provide regular reports showing these metrics and their impact on your business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready to Boost Your ROI?</h2>
+            <p>Get a free PPC campaign audit and strategy plan</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-btn primary">Get Started</a>
+                <a href="#portfolio" class="cta-btn secondary">View Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/animations.js"></script>
+    <script src="../scripts/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="150" height="150" rx="10" fill="#1A1F35"/>
+    
+    <!-- Analytics Logo -->
+    <g transform="translate(25, 35)">
+        <!-- Bar Chart -->
+        <rect x="0" y="50" width="20" height="40" fill="#F9AB00"/>
+        <rect x="35" y="30" width="20" height="60" fill="#E37400"/>
+        <rect x="70" y="10" width="20" height="80" fill="#E37400"/>
+        
+        <!-- Line Graph -->
+        <path d="M0 70 L35 40 L70 20 L100 50" stroke="#F9AB00" stroke-width="3" fill="none"/>
+        
+        <!-- Data Points -->
+        <circle cx="0" cy="70" r="4" fill="#F9AB00"/>
+        <circle cx="35" cy="40" r="4" fill="#F9AB00"/>
+        <circle cx="70" cy="20" r="4" fill="#F9AB00"/>
+        <circle cx="100" cy="50" r="4" fill="#F9AB00"/>
+    </g>
+    
+    <!-- Text -->
+    <text x="75" y="130" fill="white" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Analytics</text>
+</svg>
