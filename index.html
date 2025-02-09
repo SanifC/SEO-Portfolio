@@ -162,6 +162,29 @@
                 display: flex;
             }
         }
+
+        /* Hero Section Styles */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+        }
+        .hero-content {
+            flex: 1;
+            padding-right: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .hero-visualization {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -234,6 +257,13 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
+            <h1>SEO Excellence</h1>
+            <p class="hero-description">Elevating Your Digital Presence Through Strategic Optimization</p>
+            <p class="hero-description">Unlock the full potential of your website with our tailored SEO strategies designed to drive traffic, increase visibility, and boost conversions.</p>
+            <p class="hero-description">Join hundreds of satisfied clients who have transformed their online presence and achieved remarkable results.</p>
+            <a href="#portfolio" class="cta-btn">View Our Work</a>
+        </div>
+        <div class="hero-visualization">
             <div class="hero-bg">
                 <div id="particles-js"></div>
                 <div class="seo-terms">
@@ -254,9 +284,6 @@
                     <div class="connections"></div>
                 </div>
             </div>
-            <h1>SEO Excellence</h1>
-            <p>Elevating Your Digital Presence Through Strategic Optimization</p>
-            <a href="#portfolio" class="cta-btn">View Our Work</a>
         </div>
     </section>
 
