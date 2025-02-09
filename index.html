@@ -8,184 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-        /* Skills Section Styling */
-        .section-subtitle {
-            color: #ffffff;
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            padding: 2rem 0;
-        }
-
-        .skill-card {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 1.5rem;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            border-color: #E63946;
-            background: linear-gradient(
-                45deg,
-                var(--bg-secondary),
-                rgba(74, 35, 90, 0.4)
-            );
-        }
-
-        .skill-icon {
-            font-size: 2rem;
-            color: #E63946;
-            margin-bottom: 0.75rem;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-card:hover .skill-icon {
-            transform: scale(1.1);
-        }
-
-        .skill-title {
-            font-size: 1.25rem;
-            color: #ffffff;
-            margin-bottom: 0.75rem;
-            position: relative;
-            font-weight: 600;
-        }
-
-        .skill-description {
-            color: #e1e1e1;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-            font-size: 0.9rem;
-        }
-
-        .skill-link {
-            display: inline-flex;
-            align-items: center;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            font-size: 0.85rem;
-            background: linear-gradient(135deg, #E63946 0%, #cc1f2d 100%);
-            padding: 0.4rem 0.8rem;
-            border-radius: 20px;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .skill-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
-        }
-
-        .skill-link:hover::before {
-            left: 100%;
-        }
-
-        .skill-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .skill-link i {
-            margin-left: 0.4rem;
-            font-size: 0.9rem;
-            transition: transform 0.3s ease;
-            color: rgba(255, 255, 255, 0.95);
-            text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-        }
-
-        .skill-link:hover i {
-            transform: translateX(3px);
-            color: #ffffff;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-        }
-
-        /* Special style for "Coming Soon" links */
-        .skill-link[href="#"] {
-            background: linear-gradient(135deg, #E63946 0%, #8b1821 100%);
-            opacity: 0.9;
-        }
-
-        .skill-link[href="#"]:hover {
-            opacity: 1;
-            box-shadow: 0 5px 15px rgba(74, 35, 90, 0.3);
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="logo">
-            <svg class="logo-svg" width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background Glow -->
-                <circle cx="30" cy="30" r="25" fill="url(#glowGradient)" opacity="0.2"/>
-                
-                <!-- Main Arrows Group -->
-                <g class="arrows-group">
-                    <!-- Largest Arrow -->
-                    <path class="arrow-large" 
-                          d="M15 40 L30 25 L45 40" 
-                          stroke="var(--accent)" 
-                          stroke-width="4" 
-                          fill="none" 
-                          stroke-linecap="round" 
-                          stroke-linejoin="round"/>
-                    
-                    <!-- Medium Arrow -->
-                    <path class="arrow-medium" 
-                          d="M20 32 L30 18 L40 32" 
-                          stroke="var(--accent)" 
-                          stroke-width="3.5" 
-                          fill="none" 
-                          stroke-linecap="round" 
-                          stroke-linejoin="round"/>
-                    
-                    <!-- Small Arrow -->
-                    <path class="arrow-small" 
-                          d="M25 25 L30 12 L35 25" 
-                          stroke="var(--text-primary)" 
-                          stroke-width="3" 
-                          fill="none" 
-                          stroke-linecap="round" 
-                          stroke-linejoin="round"/>
-                </g>
-
-                <!-- Accent Elements -->
-                <circle cx="30" cy="18" r="2" fill="var(--text-primary)"/>
-                <circle cx="30" cy="25" r="2" fill="var(--accent)"/>
-                <circle cx="30" cy="32" r="2" fill="var(--accent)"/>
-
-                <!-- Gradients -->
-                <defs>
-                    <linearGradient id="glowGradient" x1="30" y1="5" x2="30" y2="55">
-                        <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.5"/>
-                        <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
-                    </linearGradient>
-                </defs>
-            </svg>
-            <span class="logo-text">SEO Excellence</span>
-        </div>
+        <div class="logo">Portfolio</div>
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
@@ -265,123 +92,28 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Our Skills</h2>
-            <p class="section-subtitle">Comprehensive SEO & Digital Marketing Solutions</p>
-            
-            <div class="skills-grid">
-                <!-- Technical SEO -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="skill-title">Technical SEO</h3>
-                    <p class="skill-description">
-                        Site Architecture, Speed Optimization, Mobile Optimization
-                    </p>
-                    <a href="./services/technical-seo.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- On-Page SEO -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                    <h3 class="skill-title">On-Page SEO</h3>
-                    <p class="skill-description">
-                        Content Optimization, Meta Tags, Internal Linking
-                    </p>
-                    <a href="./services/on-page-seo.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Off-Page SEO -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3 class="skill-title">Off-Page SEO</h3>
-                    <p class="skill-description">
-                        Link Building, Brand Mentions, Authority Building
-                    </p>
-                    <a href="./services/off-page-seo.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Local SEO -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3 class="skill-title">Local SEO</h3>
-                    <p class="skill-description">
-                        Google Business Profile, Local Citations, Area Targeting
-                    </p>
-                    <a href="./services/local-seo.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Email Marketing -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="skill-title">Email Marketing</h3>
-                    <p class="skill-description">
-                        Campaign Strategy, Automation, List Management
-                    </p>
-                    <a href="./services/email-marketing.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Social Media -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-hashtag"></i>
-                    </div>
-                    <h3 class="skill-title">Social Media</h3>
-                    <p class="skill-description">
-                        Content Strategy, Community Management, Paid Campaigns
-                    </p>
-                    <a href="./services/social-media.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- PPC Advertising -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-bullhorn"></i>
-                    </div>
-                    <h3 class="skill-title">PPC Advertising</h3>
-                    <p class="skill-description">
-                        Google Ads, Meta Ads, Campaign Optimization
-                    </p>
-                    <a href="./services/ppc-advertising.html" class="skill-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <!-- Content Marketing -->
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-pen-fancy"></i>
-                    </div>
-                    <h3 class="skill-title">Content Marketing</h3>
-                    <p class="skill-description">
-                        Strategy Development, Content Creation, Distribution
-                    </p>
-                    <a href="#" class="skill-link">
-                        Coming Soon <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Our Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fas fa-search"></i>
+                <h3>Technical SEO</h3>
+                <p>Site Architecture, Speed Optimization</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Keyword Research</h3>
+                <p>Strategic Analysis & Planning</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Content Strategy</h3>
+                <p>SEO-Optimized Content Creation</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-link"></i>
+                <h3>Link Building</h3>
+                <p>High-Quality Backlink Acquisition</p>
             </div>
         </div>
     </section>
