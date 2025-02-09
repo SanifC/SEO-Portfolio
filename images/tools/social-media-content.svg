@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="150" height="150" rx="10" fill="#1A1F35"/>
+    <g transform="translate(25, 25)">
+        <circle cx="75" cy="75" r="50" fill="#577590"/>
+        <text x="75" y="80" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">SM</text>
+    </g>
+    <text x="75" y="130" fill="white" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Social Media</text>
+</svg>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Professional PPC Advertising Services - Targeted Campaigns, ROI-Focused, Data-Driven Results">
+    <meta name="description" content="Professional Content Creation Services - Engaging, SEO-Optimized Content for Your Brand">
     <meta name="theme-color" content="#1A1F35">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>PPC Advertising Services - Digital Marketing Excellence</title>
+    <title>Content Creation Services - Digital Marketing Excellence</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../services.css">
@@ -252,6 +252,73 @@
                 padding: 0 1rem;
             }
         }
+
+        /* Updated Features Grid Styling */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 220px;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 1rem;
+            color: #E63946;
+        }
+
+        .feature-card svg {
+            width: 80px;
+            height: 80px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .feature-card {
+                height: auto;
+                padding: 1rem;
+            }
+
+            .feature-icon {
+                font-size: 35px;
+                margin-bottom: 0.8rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .feature-card p {
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -301,9 +368,9 @@
             <div class="code-overlay"></div>
         </div>
         <div class="service-hero-content">
-            <span class="service-category">PPC Advertising</span>
-            <h1>PPC <span class="highlight">Excellence</span></h1>
-            <p class="hero-subtitle">Drive Targeted Traffic & Maximize ROI</p>
+            <span class="service-category">Content Creation</span>
+            <h1>Content Creation <span class="highlight">Excellence</span></h1>
+            <p class="hero-subtitle">Engaging, SEO-Optimized Content for Your Brand</p>
             <div class="hero-stats">
                 <div class="stat">
                     <span class="stat-number counter">300</span><span class="stat-symbol">%</span>
@@ -329,18 +396,18 @@
         <div class="container">
             <div class="overview-grid">
                 <div class="overview-content">
-                    <h2>Why PPC Advertising Matters</h2>
-                    <p>PPC advertising delivers immediate results with measurable ROI. It's the fastest way to get your brand in front of your target audience when they're actively searching for your products or services.</p>
+                    <h2>Why Content Creation Matters</h2>
+                    <p>Content creation is essential for engaging your audience and driving conversions. High-quality content enhances brand visibility and fosters customer relationships.</p>
                     <ul class="overview-features">
-                        <li><i class="fas fa-check"></i> Instant Traffic Generation</li>
-                        <li><i class="fas fa-check"></i> Precise Audience Targeting</li>
-                        <li><i class="fas fa-check"></i> Measurable Results</li>
-                        <li><i class="fas fa-check"></i> Cost-Effective Marketing</li>
+                        <li><i class="fas fa-check"></i> Engaging Content</li>
+                        <li><i class="fas fa-check"></i> SEO-Optimized</li>
+                        <li><i class="fas fa-check"></i> Tailored to Audience</li>
+                        <li><i class="fas fa-check"></i> Multi-Format Delivery</li>
                     </ul>
                 </div>
                 <div class="overview-image">
-                    <img src="../images/services/ppc-advertising-diagram.svg" alt="PPC Advertising Visualization" 
-                         onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/1A1F35/FFFFFF?text=PPC+Advertising+Diagram'">
+                    <img src="../images/services/content-creation-visualization.svg" alt="Content Creation Visualization" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/1A1F35/FFFFFF?text=Content+Creation+Visualization'">
                 </div>
             </div>
         </div>
@@ -349,73 +416,87 @@
     <!-- Key Features -->
     <section class="service-features">
         <div class="container">
-            <h2>Our PPC Advertising Services</h2>
+            <h2>Our Content Creation Services</h2>
             <div class="features-grid">
+                <!-- First Row -->
                 <div class="feature-card">
-                    <i class="fas fa-bullseye"></i>
-                    <h3>Campaign Strategy</h3>
-                    <p>Custom PPC strategies aligned with your business goals and target audience.</p>
+                    <i class="fas fa-bullseye feature-icon"></i>
+                    <h3>Content Strategy</h3>
+                    <p>Custom content strategies aligned with your business goals and target audience.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-search-dollar"></i>
-                    <h3>Keyword Research</h3>
-                    <p>In-depth keyword analysis to target high-intent search terms.</p>
+                    <i class="fas fa-search-dollar feature-icon"></i>
+                    <h3>Content Creation</h3>
+                    <p>Engaging content tailored for your audience, including blog posts, videos, and social media content.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Performance Tracking</h3>
-                    <p>Real-time monitoring and optimization of campaign performance.</p>
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Content Optimization</h3>
+                    <p>Continuous optimization of content for better performance and ROI.</p>
+                </div>
+    
+                <!-- Second Row -->
+                <div class="feature-card">
+                    <i class="fas fa-edit feature-icon"></i>
+                    <h3>Content Editing</h3>
+                    <p>Professional editing services to refine your content and ensure quality.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-edit"></i>
-                    <h3>Ad Creation</h3>
-                    <p>Compelling ad copy that drives clicks and conversions.</p>
+                    <svg class="feature-icon" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" fill="#1A1F35"/>
+                        <text x="75" y="95" fill="#E63946" font-family="Arial" font-size="16" text-anchor="middle">CD</text>
+                        <path d="M75 10C47 10 25 32 25 60V90C25 118 47 140 75 140S103 118 103 90V60C103 32 81 10 75 10Z" fill="#E63946"/>
+                    </svg>
+                    <h3>Content Distribution</h3>
+                    <p>Strategic distribution of content across multiple channels for maximum reach.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-funnel-dollar"></i>
-                    <h3>Budget Management</h3>
-                    <p>Strategic budget allocation to maximize ROI across campaigns.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-analytics"></i>
-                    <h3>Analytics & Reporting</h3>
-                    <p>Detailed insights and regular performance reports.</p>
+                    <svg class="feature-icon" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="150" height="150" fill="#1A1F35"/>
+                        <text x="75" y="95" fill="#E63946" font-family="Arial" font-size="16" text-anchor="middle">CA</text>
+                        <rect x="50" y="30" width="10" height="60" fill="#E63946"/>
+                        <rect x="70" y="40" width="10" height="50" fill="#E63946"/>
+                        <rect x="90" y="20" width="10" height="70" fill="#E63946"/>
+                    </svg>
+                    <h3>Content Analytics</h3>
+                    <p>Detailed insights and regular performance reports to measure content success.</p>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Process Section -->
     <section class="service-process">
         <div class="container">
-            <h2>Our PPC Management Process</h2>
+            <h2>Our Content Creation Process</h2>
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="step-content">
-                        <h3>Account Analysis</h3>
-                        <p>Comprehensive review of your existing PPC accounts or fresh strategy development for new campaigns.</p>
+                        <h3>Content Strategy Development</h3>
+                        <p>Comprehensive analysis of your business goals and target audience to develop a tailored content strategy.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Campaign Setup</h3>
-                        <p>Strategic campaign structure, keyword research, and compelling ad creation.</p>
+                        <h3>Content Creation</h3>
+                        <p>High-quality content creation, including blog posts, videos, and social media content, tailored to your audience and goals.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Optimization</h3>
-                        <p>Continuous monitoring and refinement of campaigns for maximum performance.</p>
+                        <h3>Content Optimization</h3>
+                        <p>Continuous optimization of content for better performance and ROI, including keyword research and on-page optimization.</p>
                     </div>
                 </div>
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <div class="step-content">
-                        <h3>Reporting & Analysis</h3>
-                        <p>Regular performance reports with actionable insights and recommendations.</p>
+                        <h3>Content Distribution</h3>
+                        <p>Strategic distribution of content across multiple channels, including social media, email, and blog posts.</p>
                     </div>
                 </div>
             </div>
@@ -425,37 +506,37 @@
     <!-- Checklist Section -->
     <section class="checklist-section">
         <div class="container">
-            <h2>PPC Campaign Checklist</h2>
-            <p class="section-subtitle">Our comprehensive approach to PPC success</p>
+            <h2>Content Creation Checklist</h2>
+            <p class="section-subtitle">Our comprehensive approach to content creation success</p>
             <div class="checklist-grid">
                 <div class="checklist-column">
-                    <h3>Campaign Setup</h3>
+                    <h3>Content Strategy</h3>
                     <ul>
-                        <li>Account Structure</li>
+                        <li>Target Audience Analysis</li>
+                        <li>Content Goals Definition</li>
+                        <li>Content Calendar Creation</li>
+                        <li>Content Budget Planning</li>
+                        <li>Content Team Assembly</li>
+                    </ul>
+                </div>
+                <div class="checklist-column">
+                    <h3>Content Creation</h3>
+                    <ul>
+                        <li>Blog Post Writing</li>
+                        <li>Video Production</li>
+                        <li>Social Media Content Creation</li>
+                        <li>Infographic Design</li>
+                        <li>Ebook and Whitepaper Creation</li>
+                    </ul>
+                </div>
+                <div class="checklist-column">
+                    <h3>Content Optimization</h3>
+                    <ul>
                         <li>Keyword Research</li>
-                        <li>Ad Copy Creation</li>
-                        <li>Landing Page Review</li>
-                        <li>Budget Planning</li>
-                    </ul>
-                </div>
-                <div class="checklist-column">
-                    <h3>Optimization</h3>
-                    <ul>
-                        <li>Bid Management</li>
-                        <li>Quality Score Improvement</li>
-                        <li>A/B Testing</li>
-                        <li>Negative Keywords</li>
-                        <li>Ad Extensions</li>
-                    </ul>
-                </div>
-                <div class="checklist-column">
-                    <h3>Analysis</h3>
-                    <ul>
-                        <li>Conversion Tracking</li>
-                        <li>ROI Analysis</li>
-                        <li>Performance Metrics</li>
-                        <li>Competitor Analysis</li>
-                        <li>Budget Optimization</li>
+                        <li>On-Page Optimization</li>
+                        <li>Technical SEO Audit</li>
+                        <li>Content Promotion</li>
+                        <li>Content Repurposing</li>
                     </ul>
                 </div>
             </div>
@@ -466,31 +547,31 @@
     <section class="tools-section">
         <div class="container">
             <h2>Professional Tools We Use</h2>
-            <p class="section-subtitle">Industry-leading platforms for PPC campaign management</p>
+            <p class="section-subtitle">Industry-leading tools for content creation</p>
             <div class="tools-grid">
                 <div class="tool-card">
-                    <img src="../images/tools/google-ads.svg" alt="Google Ads" 
-                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Google+Ads'">
-                    <h3>Google Ads</h3>
-                    <p>Search & Display advertising</p>
+                    <img src="../images/tools/content-creation.svg" alt="Content Creation" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Content+Creation'">
+                    <h3>Content Creation</h3>
+                    <p>Engaging content tailored for your audience.</p>
                 </div>
                 <div class="tool-card">
-                    <img src="../images/tools/semrush.svg" alt="SEMrush" 
-                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=SEMrush'">
-                    <h3>SEMrush</h3>
-                    <p>Keyword & competitor research</p>
+                    <img src="../images/tools/blog-writing.svg" alt="Blog Writing" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Blog+Writing'">
+                    <h3>Blog Writing</h3>
+                    <p>SEO-optimized blog posts that drive traffic.</p>
                 </div>
                 <div class="tool-card">
-                    <img src="../images/tools/analytics.svg" alt="Google Analytics" 
-                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Analytics'">
-                    <h3>Analytics</h3>
-                    <p>Performance tracking</p>
+                    <img src="../images/tools/video-production.svg" alt="Video Production" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Video+Production'">
+                    <h3>Video Production</h3>
+                    <p>High-quality videos for better engagement.</p>
                 </div>
                 <div class="tool-card">
-                    <img src="../images/tools/optmyzr.svg" alt="Optmyzr" 
-                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Optmyzr'">
-                    <h3>Optmyzr</h3>
-                    <p>Campaign optimization</p>
+                    <img src="../images/tools/social-media-content.svg" alt="Social Media Content" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/150x150/1A1F35/FFFFFF?text=Social+Media+Content'">
+                    <h3>Social Media Content</h3>
+                    <p>Creative content for all social platforms.</p>
                 </div>
             </div>
         </div>
@@ -502,20 +583,20 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">
-                    <h3>What is PPC advertising?</h3>
-                    <p>PPC (Pay-Per-Click) advertising is a digital marketing model where advertisers pay only when users click on their ads. It's an effective way to drive targeted traffic to your website and generate immediate results.</p>
+                    <h3>What is content creation?</h3>
+                    <p>Content creation is the process of developing and publishing valuable, relevant, and consistent content to attract and retain a clearly defined audience.</p>
                 </div>
                 <div class="faq-item">
                     <h3>How long does it take to see results?</h3>
-                    <p>PPC campaigns can generate immediate traffic, but optimizing for best performance typically takes 2-3 months. We continuously monitor and adjust campaigns to improve ROI over time.</p>
+                    <p>Content creation is a long-term strategy, and results may vary depending on the quality of content, audience engagement, and distribution channels. However, with consistent effort, you can start seeing improvements in website traffic, engagement, and conversions within 3-6 months.</p>
                 </div>
                 <div class="faq-item">
                     <h3>What's a good budget to start with?</h3>
-                    <p>Starting budgets vary by industry and goals, but we recommend a minimum of $1000/month for effective testing and optimization. We'll help you determine the optimal budget based on your objectives.</p>
+                    <p>The budget for content creation varies widely depending on the scope of the project, the type of content, and the distribution channels. We recommend starting with a minimum budget of $1,000 per month and adjusting as needed based on performance and goals.</p>
                 </div>
                 <div class="faq-item">
                     <h3>How do you measure success?</h3>
-                    <p>We track key metrics including click-through rate (CTR), conversion rate, cost per conversion, and return on ad spend (ROAS). We provide regular reports showing these metrics and their impact on your business goals.</p>
+                    <p>We track key metrics including website traffic, engagement, conversions, and return on investment (ROI). We provide regular reports and analysis to help you understand the performance of your content and make data-driven decisions.</p>
                 </div>
             </div>
         </div>
@@ -524,16 +605,15 @@
     <!-- CTA Section -->
     <section class="service-cta">
         <div class="container">
-            <h2>Ready to Boost Your ROI?</h2>
-            <p>Get a free PPC campaign audit and strategy plan</p>
+            <h2>Ready to Boost Your Content Game?</h2>
+            <p>Get a free content creation strategy plan and take the first step towards engaging your audience and driving conversions.</p>
             <div class="cta-buttons">
                 <a href="#contact" class="cta-btn primary">Get Started</a>
-                <a href="#portfolio" class="cta-btn secondary">View Success Stories</a>
+                <a href="#" class="cta-btn secondary">View Case Studies</a>
             </div>
         </div>
     </section>
 
-    <script src="../scripts/animations.js"></script>
-    <script src="../scripts/navigation.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

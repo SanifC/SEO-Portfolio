@@ -131,6 +131,37 @@
             opacity: 1;
             box-shadow: 0 5px 15px rgba(74, 35, 90, 0.3);
         }
+
+        /* Hamburger Menu Styles */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .nav-toggle span {
+            height: 3px;
+            width: 25px;
+            background: var(--text-primary);
+            margin: 3px 0;
+            transition: all 0.3s ease;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background: var(--bg-secondary);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-toggle {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
@@ -186,11 +217,11 @@
             </svg>
             <span class="logo-text">SEO Excellence</span>
         </div>
-        <button class="nav-toggle" aria-label="Toggle navigation">
+        <div class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
-        </button>
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -378,8 +409,8 @@
                     <p class="skill-description">
                         Strategy Development, Content Creation, Distribution
                     </p>
-                    <a href="#" class="skill-link">
-                        Coming Soon <i class="fas fa-arrow-right"></i>
+                    <a href="./services/content-creation.html" class="skill-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -525,6 +556,16 @@
         (function() {
             emailjs.init("VawblZRMuQNQmoVE0");
         })();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            navToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        });
     </script>
     <script src="script.js"></script>
 </body>

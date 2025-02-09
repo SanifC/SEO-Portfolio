@@ -348,7 +348,23 @@
 
     <!-- Navigation -->
     <nav>
-        <div class="logo">Portfolio</div>
+        <div class="logo">
+            <svg class="logo-svg" width="50" height="50" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="30" r="25" fill="url(#glowGradient)" opacity="0.2"/>
+                <g class="arrows-group">
+                    <path class="arrow-large" d="M15 40 L30 25 L45 40" stroke="var(--accent)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="arrow-medium" d="M20 32 L30 18 L40 32" stroke="var(--accent)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="arrow-small" d="M25 25 L30 12 L35 25" stroke="var(--text-primary)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                    <linearGradient id="glowGradient" x1="30" y1="5" x2="30" y2="55">
+                        <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.5"/>
+                        <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span class="logo-text">SEO Excellence</span>
+        </div>
         <ul class="nav-links">
             <li><a href="../index.html#home">Home</a></li>
             <li><a href="../index.html#about">About</a></li>
